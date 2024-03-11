@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Practice</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		//Spread Operator(...) ES6 version
+
+		/*const arr1 = [1,2,3];
+		const arr2 = [4,5,6];
+
+		const concateArr = [...arr1, ...arr2];
+
+		console.log(concateArr);*/
+
+		/*const str = "Hello";
+		const charArr = [...str];
+		console.log(charArr);*/
+
+		/*const obj1 = {a:1, b:2};
+		const obj2 = {b:3, c:4};
+
+		const mergeObj = {...obj1, ...obj2};
+
+		console.log(mergeObj);
+
+		const cloneObj = {...obj1};
+		console.log(cloneObj);*/
+
+		/*let xy = ()=> {
+			console.log(arguments);
+		}
+		xy(2,5,7); This lines of code throw an uncaught reference error.
+		So we can fix this by using spread operator*/ 
+
+		/*let t = (...n)=>{
+
+			console.log(n);
+		}
+
+		t(10,20,30,40);*/
+
+		var a = parseInt(prompt("First Number"));
+		var b = parseInt(prompt("Second Number"));
+		var c = parseInt(prompt("Third Number"));
+
+		if(a < b)
+		{
+			temp = a;
+			a = b;
+			b = temp;
+		}
+
+		if(a < c)
+		{
+			temp = a;
+			a = c;
+			c = temp;
+		}
+
+		if(b < c)
+		{
+			temp = b;
+			b=c;
+			c=temp;
+		}
+
+		document.write(a+", "+b+", "+c);
+
+	</script>
+
+</body>
+</html>
