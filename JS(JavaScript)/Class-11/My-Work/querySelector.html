@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript querySelector Ex.</title>
+
+	<style type="text/css">
+		div
+		{
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<h1>Welcome</h1>
+		<p>This is a paragraph</p>
+	</div>
+
+	<div>
+		<h1>Welcome Again</h1>
+		<p>This is paragraph Two</p>
+	</div>
+
+	<div>
+		<h1>Welcome Aganin & Again</h1>
+		<p>This is paragraph three</p>
+	</div>
+	<button onclick="func1()">Click to Change</button>
+
+	<script type="text/javascript">
+		function func1()
+		{
+			var xyz = document.querySelector("div > p");
+			xyz.style.color = 'orange';
+			//xyz[1].style.color = 'orange';
+		}
+	</script>
+</body>
+</html>
